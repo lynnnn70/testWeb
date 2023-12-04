@@ -1,4 +1,4 @@
-package com.example.testweb.methodreference;
+package com.example.testweb.java8.methodreference;
 
 import java.util.function.Supplier;
 

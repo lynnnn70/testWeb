@@ -1,4 +1,4 @@
-package com.example.testweb.methodreference;
+package com.example.testweb.java8.methodreference;
 
 import java.util.function.Consumer;
 //實例方法引用（特定對象）
