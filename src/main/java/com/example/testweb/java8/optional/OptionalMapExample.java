@@ -14,5 +14,7 @@ public class OptionalMapExample {
         Optional<Optional<String>> wrapped = Optional.of(opt);
         Optional<String> flatMapped = wrapped.flatMap(o -> o);
         flatMapped.ifPresent(System.out::println); // java
+
+
     }
 }

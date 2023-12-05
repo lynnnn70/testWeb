@@ -5,12 +5,22 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LambdaStreamExample {
-    public static void main(String[] args) {
-        List<String> lines = Arrays.asList("春天", "夏天", "秋天", "冬天");
-        List<String> result = lines.stream()
-                .filter(line -> !"夏天".equals(line))
-                .collect(Collectors.toList());
+//    public static void main(String[] args) {
+//        List<String> lines = Arrays.asList("春天", "夏天", "秋天", "冬天");
+//        List<String> result = lines.stream()
+//                .filter(line -> !"夏天".equals(line))
+//                .collect(Collectors.toList());
+//
+//        result.forEach(System.out::println);
+//    }
 
+    public static void main(String[] args) {
+
+        List<String> lines = Arrays.asList("Spring", "Summer", "Winter", "Fall");
+        List<String> result = lines.stream()
+                .filter(line -> !"Spring".equals(line))
+                .collect(Collectors.toList());
         result.forEach(System.out::println);
+
     }
 }

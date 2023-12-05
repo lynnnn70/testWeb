@@ -15,8 +15,6 @@ public class StaticMethodReferenceExample {
             printWord(word);
         }
         System.out.println("=====傳統for each======");
-
-
     }
     //如果是靜態static的方法,依照java的設計,可直接使用類別呼叫
     public static void printWord(String word) {

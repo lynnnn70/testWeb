@@ -18,7 +18,7 @@ public class ConstructorReferenceExample {
         Supplier<StringBuilder> supplier = StringBuilder::new;
         StringBuilder stringBuilder = supplier.get();
         stringBuilder.append("Hello, Constructor Reference!");
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuilder);
     }
     public static void lambda(){
         Supplier<StringBuilder> supplier = () -> new StringBuilder();

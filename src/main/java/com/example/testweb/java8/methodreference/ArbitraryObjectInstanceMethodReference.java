@@ -12,7 +12,9 @@ public class ArbitraryObjectInstanceMethodReference {
         strings.forEach(str -> str.toUpperCase());
         System.out.println("======上面使用Lambda=========");
         for(String str : strings){
-            str.toUpperCase();
+            String upperCase = str.toUpperCase();
+            System.out.println(upperCase);
+
         }
     }
 }

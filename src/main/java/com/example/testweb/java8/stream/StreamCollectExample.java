@@ -1,5 +1,6 @@
 package com.example.testweb.java8.stream;
 
+import java.sql.SQLOutput;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,4 +12,5 @@ public class StreamCollectExample {
 
         System.out.println(collected); // [apple, banana, cherry, date]
     }
+
 }

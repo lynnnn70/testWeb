@@ -8,9 +8,10 @@ public class StreamMapExample {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> squared = numbers.stream()
-                .map(n -> n * n)
+                .map(n -> n * n)     // n 代表 numbers 中的每一個元素
                 .collect(Collectors.toList());
 
         System.out.println(squared); // [1, 4, 9, 16, 25]
     }
+
 }
