@@ -106,7 +106,7 @@ public class DepartmentDaoImpl implements DepartmentDao{
 
         }, keyHolder);
 
-        //從keyHoder 中檢所生成的主鍵
+        //從keyHoder 中檢索生成的主鍵
         Number key = keyHolder.getKey();
         //如果有自動生成主鍵，將其設置在Department對象中
         if (key != null){
@@ -115,7 +115,7 @@ public class DepartmentDaoImpl implements DepartmentDao{
         return department;
     }
 
-    //jdbcRemplate.update方法回傳的是受影響的行數，而不是更新後的實體
+    //jdbcTemplate.update方法回傳的是受影響的行數，而不是更新後的實體
     @Override
     public int update(Department department) {
         final String sql = "UPDATE dept2 SET DNAME=?, LOC=? WHERE DEPTNO =? ";
