@@ -15,13 +15,13 @@ public class CustomServletContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext ctx = sce.getServletContext();
         ctx.setAttribute("myData", "這是一個大家都可以用的東西，大家都應該可以看到");
-        log.info("web demo 啟動 :{}" , sce.getServletContext());
+        log.info("web demo 啟動 :{}" , sce.getServletContext().getServerInfo());
 
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        log.info("web demo 關閉 :{}" , sce.getServletContext());
+        log.info("web demo 關閉 :{}" , sce.getServletContext().getServerInfo());
         ServletContextListener.super.contextDestroyed(sce);
     }
 }

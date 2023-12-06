@@ -14,11 +14,12 @@ public class EqualTest {
         set.add(box1);
         set.add(box2);
         System.out.println(set);
-
+//        HashSet不重複，若有存在一個相同元素，該操作不會有效果
 //        HashSet<String> set = new HashSet<>();
 //        set.add("123");
 //        set.add("456");
 //        set.add("123");
 //        System.out.println(set);
+
     }
 }

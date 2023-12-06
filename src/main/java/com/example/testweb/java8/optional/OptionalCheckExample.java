@@ -15,3 +15,4 @@ public class OptionalCheckExample {
         opt.ifPresent(System.out::println);
     }
 }
+

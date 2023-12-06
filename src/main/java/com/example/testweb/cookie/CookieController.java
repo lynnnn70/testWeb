@@ -25,6 +25,7 @@ public class CookieController {
         Cookie cookie = new Cookie("theme", theme);
         cookie.setMaxAge(5 * 60); // 保存5 min
         cookie.setHttpOnly(true); // 設置 HttpOnly 標誌
+        //cookie.setSecure(true); // https only
         response.addCookie(cookie);
         return "redirect:/getTheme";
     }
