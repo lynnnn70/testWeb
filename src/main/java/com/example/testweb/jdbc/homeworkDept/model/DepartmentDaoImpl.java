@@ -30,6 +30,8 @@ public class DepartmentDaoImpl implements DepartmentDao{
 //          .stream().findFirst().orElse(null);
 
         // 2.長度為0時 return null(因為就算為0也會回傳空字串，所以要做判斷)
+        // 如果不做 list.isEmpty() 的判斷，直接使用 list.get(0) 返回列表的第一個元素，可能會引起一些潛在的問題，特別是在沒有查詢結果時。
+        // 若沒查詢到結果，list 會是一個空列表（size 為 0），直接使用 list.get(0) 會導致 IndexOutOfBoundsException
         List<Department> list = jdbcTemplate.query(sql, new DepartmentRowMapper(), id);
         if(list.isEmpty()){
             return null;
